@@ -10,8 +10,8 @@ void main(){
 kar_do_print(){ // it is dynamic type function because we haven't define return type here
   return "Welcome Lo kar diya print";
 }
-int add(int a,int b)=>a+b;// this is called one line function it is defined like this , if we write multiple line in this, will give error
-
+int add(int a,int b)=>a+b;// this is called one line function it is defined like this and will return a+b, if we write multiple line in this, will give error
+// =>a+b means return a+b;
 student({String name,String roll,int marks}){ // argument without order
   print('Name is $name,Roll No. is $roll and Marks is $marks');
 }
