@@ -4,17 +4,27 @@
 void main()
 {
   Map student={"Name":"Aniket","Roll":"EEB17031","Department":"Electrical,"};
-  print(student);
+  print(student); // o/p: {Name: Aniket, Roll: EEB17031, Department: Electrical,, CGPA: 7}
   student['CGPA']=7.0; // contructor type declaration 
-  print(student);
+  print(student); // {Name: Aniket, Roll: EEB17031, Department: Electrical,, CGPA: 7}
   student['CGPA']=7.5; // it will replace CGPA (Update) 
-  print(student);
-  print('Length of Map: ${student.length}');
-  print('Is Empty: ${student.isEmpty}');
+  print(student); // {Name: Aniket, Roll: EEB17031, Department: Electrical,, CGPA: 7.5}
+  print('Length of Map: ${student.length}'); // 4
+  print('Is Empty: ${student.isEmpty}'); // false
+  print(student['Name']); // Aniket
   
-  // forEach function in Map -> forEach((i,j){...onr or more function to perform operation on key and val...};);
+  // forEach function in Map -> forEach((i,j){...one or more function to perform operation on key and val...};);
   int i=1;
-  student.forEach((k,v){print('${i++}. ');print('$k:$v');}); // k and v is just variable name 
+  student.forEach((k,v){print('${i++}. ');print('$k:$v');}); // k and v is just variable name (key and value)
+// o/p:
+// 1. 
+// Name:Aniket
+// 2. 
+// Roll:EEB17031
+// 3. 
+// Department:Electrical,
+// 4. 
+// CGPA:7.5
   
   // for one line function we use=>
   student.forEach((k,v)=>print('$k:$v')); 
